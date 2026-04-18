@@ -1,0 +1,97 @@
+.data-table-wrapper {
+  background: #0d1117;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-table-header {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e0e8f0;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.table-icon {
+  font-size: 16px;
+}
+
+.data-table-scroll {
+  overflow-y: auto;
+  flex: 1;
+  max-height: 400px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.data-table th {
+  position: sticky;
+  top: 0;
+  background: #0d1117;
+  color: #5a7a9a;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  padding: 6px 8px;
+  text-align: right;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1;
+}
+
+.data-table td {
+  padding: 4px 8px;
+  text-align: right;
+  color: #a0b0c0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.data-table tr:hover td {
+  background: rgba(59, 130, 246, 0.06);
+}
+
+.data-table .highlight-row td {
+  background: rgba(255, 255, 255, 0.02);
+  font-weight: 600;
+  color: #c0d0e0;
+}
+
+.mono {
+  font-variant-numeric: tabular-nums;
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+}
+
+.temp {
+  color: #ff6666 !important;
+}
+
+.dewp {
+  color: #66cc66 !important;
+}
+
+.data-table-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.data-table-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.data-table-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
